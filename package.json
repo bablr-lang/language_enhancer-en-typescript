@@ -1,0 +1,49 @@
+{
+  "name": "@bablr/language_enhancer-en-typescript",
+  "version": "0.0.0",
+  "description": "A BABLR grammar to enhance a JS-family language with Typescript",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./lib/grammar.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "@bablr/agast-helpers": "0.9.0",
+    "@bablr/agast-vm-helpers": "0.9.0",
+    "@bablr/boot": "0.10.0",
+    "@bablr/helpers": "0.24.0",
+    "@bablr/language-en-blank-space": "0.9.0"
+  },
+  "devDependencies": {
+    "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c97bfa4b3663f8378e9b3e42bb5a41e685406cf9",
+    "@qnighy/dedent": "0.1.1",
+    "bablr": "^0.10.0",
+    "enhanced-resolve": "^5.12.0",
+    "eslint": "^8.47.0",
+    "eslint-import-resolver-enhanced-resolve": "^1.0.5",
+    "eslint-plugin-import": "^2.27.5",
+    "expect": "^29.6.2",
+    "mocha": "^10.4.0",
+    "prettier": "^2.0.5"
+  },
+  "keywords": [
+    "bablr-language",
+    "grammar",
+    "english",
+    "cstml"
+  ],
+  "repository": "git@github.com:bablr-lang/language_enhancer-en-typescript.git",
+  "homepage": "https://github.com/bablr-lang/language_enhancer-en-typescript",
+  "author": "Conrad Buck <conartist6@gmail.com>",
+  "license": "MIT"
+}
